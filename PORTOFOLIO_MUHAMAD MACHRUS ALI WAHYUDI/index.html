@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive personal portfolio website design tutorail</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+    <!-- <div class="logo-container">
+        <img src="foto\icon\machrus.png" alt="">
+    </div> -->
+
+    <div class="sidebar">
+        <div class="logo_details">
+          <!-- <i class="bx bxl-audible icon"></i> -->
+          <img class="logo_name"src="foto\icon\machrus.png" alt="" style="padding-top: 3rem;">
+          <!-- <div class="logo_name">Code Effect</div> -->
+          <i class="bx bx-menu" id="btn">
+          </i>
+        </div>
+        <ul class="nav-list">
+          <!-- <li>
+            <i class="bx bx-search"></i>
+            <input type="text" placeholder="Search...">
+             <span class="tooltip">Search</span>
+          </li> -->
+          <li>
+            <a href="#home">
+              <i class="bx bx-home"></i>
+              <span class="link_name">Home</span>
+            </a>
+            <span class="tooltip">Home</span>
+          </li>
+          <li>
+            <a href="#about">
+              <i class="bx bx-user"></i>
+              <span class="link_name">Tentang Saya</span>
+            </a>
+            <span class="tooltip">Tentang Saya</span>
+          </li>
+          <li>
+            <a href="#education">
+              <i class="bx bxs-graduation"></i>
+              <span class="link_name">Riwayat Pendidikan</span>
+            </a>
+            <span class="tooltip">Riwayat Pendidikan</span>
+          </li>
+          <li>
+            <a href="#projeksaya">
+                <i class='bx bx-file-find'></i>
+              <span class="link_name">Project</span>
+            </a>
+            <span class="tooltip">Project</span>
+          </li>
+          <li>
+            <a href="#contact">
+                <i class='bx bxs-phone-call'></i>
+              <span class="link_name">Contact</span>
+            </a>
+            <span class="tooltip">Contact</span>
+          </li>
+          
+          <!-- <li>
+            <a href="#">
+              <i class="bx bx-cog"></i>
+              <span class="link_name">Settings</span>
+            </a>
+            <span class="tooltip">Settings</span>
+          </li> -->
+
+
+          <!-- <li class="profile">
+            <div class="profile_details">
+              <img src="profile.jpeg" alt="profile image">
+              <div class="profile_content">
+                <div class="name">Anna Jhon</div>
+                <div class="designation">Admin</div>
+              </div>
+            </div>
+            <i class="bx bx-log-out" id="log_out"></i>
+          </li>
+        </ul> -->
+      </div>
+
+    <!-- <nav class="navbar">
+        <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">tentang saya</a></li>
+            <li><a href="#education">riwayat pendidikan</a></li>
+            <li><a href="#projek">projek</a></li>
+            <li><a href="#contact">my contact</a></li>
+        </ul>
+    </nav> -->
+    <div id="menu" class="bx bx-menu"></div>
+</header>
+
+<!-- header section ends -->
+
+<main>
+    <!-- home section starts  -->
+
+<section class="home" id="home">
+    <h3>HALOOO !</h3>
+    <h1>Saya <span id="typing"></span></h1>
+    <h2 id="typing2"></h2>
+    <p style="text-align: justify;">Saya merupakan mahasiswa tingkat sarjana di Universitas Trunojoyo, dengan fokus pada jurusan Sistem Informasi dan khususnya desain website. Saya juga tertarik dengan pembuatan website dan juga UI/UX Designer. Saat ini, saya sedang mencari peluang di dunia desain website. Saya dikenal dengan etos kerja yang kuat, dedikasi yang teguh, dan pola pikir kolaboratif dalam menjalani pekerjaan. Keahlian saya terutama terletak pada pengembangan desain website, dan saya pernah bekerja sama dengan rekan pengembang dalam beberapa proyek pengembangan website.
+    </p>
+    <a href="#about"><button class="btn">about me <i class="fas fa-user"></i></button></a>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+<h1 class="heading"> <span>Tentang</span> Saya </h1>
+
+<div class="row">
+
+    <div class="info" data-aos="fade-right" data-aos-duration="1000">
+        <h3> <span> Nama :</span> Muhamad Machrus Ali Wahyudi</h3>
+        <h3> <span> Tempat Lahir :</span> Lamongan</h3>
+        <h3> <span> Tanggal Lahir :</span> 13 September 2003</h3>
+        <h3> <span> Umur :</span> <span id="umur" style="font-size: 2rem; color:#2f1979; padding:1rem 0;"></span></h3>
+        <h3> <span> Alamat : </span> Desa Bedahan, Kecamatan Babat, Kabupaten Lamongan, Jawa Timur, Indonesia </h3>
+        <h3> <span> Hobi : </span> Bermain Musik, Ngoding</h3>
+        <h3> <span> Bahasa : </span> Indonesia, Jawa, Inggris </h3>
+        <a href="foto/cv/CV Machrus.pdf"><button class="btn"> download CV <i class="fas fa-download"></i> </button></a>&nbsp;
+        <a href="foto/cv/CV Machrus.png" target="_blank"><button class="btn"> lihat CV <i class="fa-solid fa-image"></i> </button></a>
+    </div>
+
+    <div class="counter" data-aos="fade-left" data-aos-duration="1000">
+        <img src="foto/profile/prof.jpg" alt="">
+    </div>
+
+</div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- education section starts  -->
+
+<section class="education" id="education">
+
+<h1 class="heading"> Riwayat <span>Pendidikan</span> </h1>
+
+<div class="box-container" data-aos="zoom-in" data-aos-duration="1000">
+
+    <div class="box">
+        <i class="fas fa-graduation-cap"></i>
+        <span>2009-2015</span>
+        <h3>Sekolah Dasar</h3>
+        <p>SD Negeri Inti Bedahan</p>
+    </div>
+
+    <div class="box">
+        <i class="fas fa-graduation-cap"></i>
+        <span>2015-2018</span>
+        <h3>Sekolah Menengah Pertama / MTs</h3>
+        <p>Madrasah Tsanawiyah Negeri 1 Lamongan</p>
+    </div>
+
+    <div class="box">
+        <i class="fas fa-graduation-cap"></i>
+        <span>2018-2021</span>
+        <h3>Sekolah Menengah Atas / MA</h3>
+        <p>Madrasah Aliyah Negeri 2 Lamongan</p>
+    </div>
+
+    <div class="box">
+        <i class="fas fa-graduation-cap"></i>
+        <span>2021-Sekarang</span>
+        <h3>Perguruan Tinggi</h3>
+        <p>Universitas Negeri Trunojoyo Madura</p>
+        <p><strong>IPK 3.79</strong></p>
+    </div>
+
+</div>
+
+</section>
+
+<!-- education section ends -->
+
+<!-- portfolio section starts  -->
+
+<section class="projeksaya" id="projeksaya">
+    <div class="projektabel">
+        <h1 class="heading"> My <span>Project</span> </h1>
+        <div class="isi">
+            <table>
+                <tr>
+                    <td>
+                    <table>
+                        <tr>
+                            <td><img src="foto/projek/WARUNG.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>Website Warung Al-Qona'ah</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://warungalqonaah.netlify.app/"><button>Visit Website</button></a></td>
+                        </tr>
+                    </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td><img src="foto/projek/diamon.png" alt=""></td>
+                            </tr>
+                            <tr>
+                                <td>Website TopUp Diamond Mobile Legends</td>
+                            </tr>
+                            <tr>
+                                <td> <a href="https://topupdiamondml.netlify.app/"><button>Visit Website</button></a></td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td><img src="foto/projek/dimsum.png" alt=""></td>
+                            </tr>
+                            <tr>
+                                <td>Website TopUp Diamond Mobile Legends</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="https://dimyumsum.000webhostapp.com/"><button>Visit Website</button></a></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <td><img src="foto/projek/spk.png" alt=""></td>
+                            </tr>
+                            <tr>
+                                <td>Website Sitem Pendukung Keputusan Pemilihan Laptop Terbaik</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="https://dimyumsum.000webhostapp.com/"><button>Visit Website</button></a></td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td><iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="300rem" height="200rem" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FZ55kM2ccLW1ai7aXK2Y5nt%2FUntitled%3Ftype%3Ddesign%26t%3DW2R6eF32zT4bSnQB-1%26scaling%3Dscale-down-width%26page-id%3D0%253A1%26node-id%3D0-88%26mode%3Ddesign" allowfullscreen></iframe></td>
+                            </tr>
+                            <tr>
+                                <td>Desain UI/UX Website Madura Tour and Travel</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="https://dimyumsum.000webhostapp.com/"><button>Klik Image to View</button></a></td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td><iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="300rem" height="200rem" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FvRJVOCpk1cioFWzF7sVocz%2FSpectrum-Media-Solution%3Ftype%3Ddesign%26node-id%3D201-937%26t%3Dqbd5mz0bWPDJcoQk-1%26scaling%3Dscale-down-width%26page-id%3D0%253A1%26mode%3Ddesign" allowfullscreen></iframe></td>
+                            </tr>
+                            <tr>
+                                <td>Desain UI/UX Website Spectrum Media Solution</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="https://dimyumsum.000webhostapp.com/"><button>Klik Image to View</button></a></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- <section class="projek" id="projek">
+
+<h1 class="heading"> My <span>Project</span> </h1>
+
+<div class="box-container" data-aos="fade-up-left" data-aos-duration="1000">
+
+    <div class="box-container" data-aos="fade-up-left" data-aos-duration="1000">
+        <div class="box">
+            <img src="foto/projek/web1.png" alt="">
+            <a href="link_ke_halaman_website_anda1" target="_blank"><button class="btn">Visit Website <i class="fas fa-external-link-alt"></i></button></a>
+        </div>
+
+    <div class="box">
+        <img src="foto/projek/web2.png" alt="">
+    </div>
+
+    <div class="box">
+        <img src="foto/projek/web3.png" alt="">
+    </div>
+
+    <div class="box">
+        <img src="foto/projek/web4.png" alt="">
+    </div>
+
+    <div class="box">
+        <img src="foto/projek/web5.png" alt="">
+    </div>
+
+    <div class="box">
+        <img src="foto/projek/web6.png" alt="">
+    </div>
+
+</div>
+
+</section> -->
+
+<section class="languages" id="languages">
+    <h1 class="heading"> Languages,<span> Frameworks,</span> and Tools</h1>
+    <hr>
+
+
+<p align="center"> 
+  <a style="margin: 5px 3px" href="https://www.w3schools.com/python/" target="_blank" rel="noreferrer"> 
+  	<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> 
+  </a>
+  <a style="margin: 5px 3px" href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> 
+  	<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="html5" width="40" height="40"/> 
+  </a> 
+  <a style="margin: 5px 3px" href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> 
+  	<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="css3" width="40" height="40"/> 
+  </a> 
+  <a style="margin: 5px 3px" href="https://www.w3schools.com/js/" target="_blank" rel="noreferrer"> 
+  	<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> 
+  </a>
+  <a style="margin: 5px 3px" href="https://www.w3schools.com/kotlin/" target="_blank" rel="noreferrer"> 
+  	<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kotlin/kotlin-original.svg" alt="kotlin" width="40" height="40"/> 
+  </a>
+  <a style="margin: 5px 3px" href="https://getbootstrap.com" target="_blank" rel="noreferrer"> 
+  	<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original.svg" alt="bootstrap" width="40" height="40"/> 
+  </a>
+</p>
+
+<p align="center"> 
+    <a style="margin: 5px 3px" href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> 
+  	<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-plain.svg" alt="tailwind" width="40" height="40"/> 
+  </a>
+    <a style="margin: 5px 3px" href="https://codeigniter.com/" target="_blank" rel="noreferrer"> 
+  	<img src="https://raw.githubusercontent.com/devicons/devicon/55609aa5bd817ff167afce0d965585c92040787a/icons/codeigniter/codeigniter-plain.svg" alt="codeigniter" width="40" height="40"/> 
+  </a>
+  <a style="margin: 5px 3px" href="https://laravel.com/" target="_blank" rel="noreferrer"> 
+  	<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/laravel/laravel-plain.svg" alt="laravel" width="40" height="40"/> 
+  </a>
+  <a style="margin: 5px 3px" href="https://www.yiiframework.com/" target="_blank" rel="noreferrer"> 
+  	<img src="https://raw.githubusercontent.com/devicons/devicon/55609aa5bd817ff167afce0d965585c92040787a/icons/yii/yii-original-wordmark.svg" alt="yii" width="40" height="40"/> 
+  </a>
+  <a style="margin: 5px 3px" href="https://vuejs.org/" target="_blank" rel="noreferrer"> 
+  	<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original.svg" alt="vuejs" width="40" height="40"/> 
+  </a>
+  <a style="margin: 5px 3px" href="https://reactjs.org/" target="_blank" rel="noreferrer"> 
+  	<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="reactjs" width="40" height="40"/> 
+  </a>
+    <a style="margin: 5px 3px" href="https://www.tensorflow.org/" target="_blank" rel="noreferrer"> 
+  	<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tensorflow/tensorflow-original.svg" alt="tensorflow" width="40" height="40"/> 
+  </a>
+</p>
+
+<p align="center">
+	<a style="margin: 5px 3px" href="https://code.visualstudio.com/" target="_blank" rel="noreferrer"> 
+  	<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg" alt="vscode" width="40" height="40"/> 
+  </a>
+	<a style="margin: 5px 3px" href="https://jupyter.org/" target="_blank" rel="noreferrer"> 
+  	<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jupyter/jupyter-original-wordmark.svg" alt="jupyter" width="40" height="40"/> 
+  </a>
+  <a style="margin: 5px 3px" href="https://www.android.com/" target="_blank" rel="noreferrer"> 
+  	<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg" alt="android" width="40" height="40"/> 
+  </a>
+  <a style="margin: 5px 3px" href="https://developer.android.com/  " target="_blank" rel="noreferrer"> 
+  	<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/androidstudio/androidstudio-original.svg" alt="androidstudio" width="40" height="40"/> 
+  </a>
+</p>
+
+<hr>
+</section>
+
+<!-- portfolio section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+<h1 class="heading"> <span>Contact</span> Me </h1>
+
+<div class="row">
+
+    <div class="content" data-aos="flip-right" data-aos-duration="1000">
+
+        <h3 class="title">contact info</h3>
+
+        <div class="info">
+            <h3> <i class="fas fa-envelope"></i> machrusa86@gmail.com </h3>
+            <h3> <i class="fas fa-phone"></i> +62895621132215 </h3>
+            <h3> <i class="fa-brands fa-whatsapp"></i> +62895621132215</h3>
+            <h3> <i class="fas fa-map-marker-alt"></i> Babat, Lamongan, Jawa Timur - Indonesia. </h3>
+        </div>
+
+    </div>
+
+    <form action="" data-aos="flip-left" data-aos-duration="1000">
+
+        <input type="text" placeholder="name" class="box">
+        <input type="email" placeholder="email" class="box">
+        <input type="text" placeholder="project" class="box">
+        <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
+        <button type="submit" class="btn"> send <i class="fas fa-paper-plane"></i> </button>
+
+    </form>
+
+</div>
+
+</section>
+
+<!-- contact section ends -->
+
+</main>
+
+
+
+
+
+</body>
+
+<!-- scroll top button  -->
+
+<a href="#home" class="top">
+    <img src="foto/icon/icons8-up-squared-64.png" alt="">
+</a>
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="script.js"></script>
+
+<script>
+    var typing = new Typed ("#typing" ,{
+        strings : ["Muhamad Machrus Ali Wahyudi..."],
+        typeSpeed: 100,
+        backSpeed:60,
+        loop:true
+    });
+    
+</script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+    var typing = new Typed("#typing2", {
+        strings: ["Website Developer and UI/UX Designer"],
+        typeSpeed: 10,
+        backSpeed: 70,
+        loop: true,
+        showCursor: false, // Sembunyikan kursor bawaan Typed.js
+        onComplete: function (self) {
+            // Tambahkan kursor kustom setelah pengetikan selesai
+            self.cursor.innerHTML = '_';
+        }
+    });
+</script>
+<!-- <script>
+    var typing = new Typed ("#typing2" ,{
+        strings : ["Website Developer and UI/UX Designer"],
+        typeSpeed: 10,
+        backSpeed:70,
+        loop:true,
+        cursorChar: "_"
+    });
+</script> -->
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 3000,
+        loop: true,
+      });
+    </script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Mendapatkan elemen tanggal lahir
+      var tanggalLahir = new Date("2003-09-13");
+  
+      // Mendapatkan tanggal saat ini
+      var tanggalSekarang = new Date();
+  
+      // Menghitung selisih tahun antara tanggal lahir dan tanggal saat ini
+      var selisihTahun = tanggalSekarang.getFullYear() - tanggalLahir.getFullYear();
+  
+      // Memeriksa apakah sudah melewati hari ulang tahun atau belum
+      if (
+        tanggalSekarang.getMonth() < tanggalLahir.getMonth() ||
+        (tanggalSekarang.getMonth() === tanggalLahir.getMonth() &&
+          tanggalSekarang.getDate() < tanggalLahir.getDate())
+      ) {
+        selisihTahun--;
+      }
+  
+      // Menampilkan umur di elemen dengan id "umur"
+      document.getElementById("umur").innerText = selisihTahun + " tahun";
+    });
+  </script>
+</html>
